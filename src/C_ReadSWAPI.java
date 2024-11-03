@@ -46,7 +46,7 @@ public class C_ReadSWAPI {
             System.out.print("OUTPUT from Server: ");
             while ((output = br.readLine()) != null) {
                 System.out.println(output);
-                jsonString += output;
+                jsonString += output; //jsonString = jsonString + output
             }
 
             conn.disconnect();
